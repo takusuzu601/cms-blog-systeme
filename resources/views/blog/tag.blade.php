@@ -1,7 +1,7 @@
 @extends('layouts.blog')
 
 @section('title')
-    Saas Blog
+    Title:{{$tag->name}}
 @endsection
 
 @section('header')
@@ -12,8 +12,10 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
 
-            <h1>最新の技術IT業界のブログ</h1>
-            <p class="lead-2 opacity-90 mt-6">皆様の投稿から最新技術の動向などをいち早くCHECK</p>
+            <h1>{{$tag->name}}</h1>
+            <p class="lead-2 opacity-90 mt-6">
+                タグ検索で最新情報を入手しよう。
+            </p>
 
           </div>
         </div>

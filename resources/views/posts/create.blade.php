@@ -94,7 +94,8 @@
 //flatpickr
 flatpickr('#published_at', {
   "locale": "ja",
-  "enableTime":"true"
+  "enableTime":"true",
+  "enableSeconds":"true"
 });
 // select2
 $(document).ready(function() {

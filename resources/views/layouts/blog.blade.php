@@ -18,7 +18,14 @@
     <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
     <link rel="icon" href="{{asset('img/favicon.png')}}">
   </head>
-
+<style>
+  .logo{
+    height:25px;
+  }
+  h1, .h1 {
+    font-size: 30px;
+}
+</style>
   <body>
 
 
@@ -27,10 +34,10 @@
       <div class="container">
 
         <div class="navbar-left">
-          <button class="navbar-toggler" type="button">&#9776;</button>
+          <button class="navbar-toggler" type="button"></button>
           <a class="navbar-brand" href="{{route('welcome')}}">
-            <img class="logo-dark" src="{{asset('img/logo-dark.png')}}" alt="logo">
-            <img class="logo-light" src="{{asset('img/logo-light.png')}}" alt="logo">
+            <img class="logo-dark logo" src="{{asset('img/logo-dark.png')}}"  alt="logo">
+            <img class="logo-light logo"   src="{{asset('img/logo-light.png')}}"  alt="logo">
           </a>
         </div>
 
@@ -56,7 +63,7 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-6 col-lg-3">
-            <a href="/"><img src="{{asset('img/logo-dark.png')}}" alt="logo"></a>
+            <a href="/"><img src="{{asset('img/logo-dark.png')}}" alt="logo" class="logo"></a>
           </div>
 
           <div class="col-6 col-lg-3 text-right order-lg-last">
@@ -76,6 +83,8 @@
     <!-- Scripts -->
     <script src="{{asset('js/page.min.js')}}"></script>
     <script src="{{asset('js/script.js')}}"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60012a9d3c672b02"></script>
 
   </body>
 </html>
